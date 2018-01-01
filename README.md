@@ -29,5 +29,14 @@ Create an EC2 instance role and attach the following policy document
 }
 ```
 
+# Configure
+
+- Replace the variables located at the top of the script, with your own values.
+- Copy/paste the script to the **User Data** section of your instances. (or your Auto-scalling group config, Cloudformation, Terraform scripts, etc...)
+
+# Troubleshoot
+
+- User data script is located under the EC2 instance at the following path: **/var/lib/cloud/instances/[instance-id]/user-data.txt**
+- User data script execution log is located under the EC2 instance in the file: **/var/log/cloud-init-output.log**
 
 
