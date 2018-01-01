@@ -6,7 +6,7 @@ ENI_IP="10.1.11.100"
 ENI_MASK="32"
 ENI_GW="10.1.11.1"
 ETH_DEVICE_INDEX="2" # The nth network interface of the instance
-ETHX=$[$ETH_DEVICE_INDEX-1] # for index=2, will add eth1 to the instance
+ETHX="eth"$[$ETH_DEVICE_INDEX-1] # for index=2, will add eth1 to the instance
 
 # Installations below are required for Ubuntu 16.04
 # Install pip
